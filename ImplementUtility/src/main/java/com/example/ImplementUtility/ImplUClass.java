@@ -1,5 +1,4 @@
-package com.example.UtilityExample;
-
+package com.example.ImplementUtility;
 public class ImplUClass {
     public static int add(int a, int b) {
         return a + b;
