@@ -1,18 +1,22 @@
-package com.example.ImplementUtility;
-
-import com.example.UtilityExample.UtilityExampleClass;
+package com.example.UtilityExample;
 
 public class ImplUClass {
-    public static void main(String[] args) {
-        int sum = UtilityExampleClass.add(100, 20);
-        int diff = UtilityExampleClass.sub(100, 20);
-        int prod = UtilityExampleClass.mul(100, 20);
-        int div = UtilityExampleClass.div(100, 20);
+    public static int add(int a, int b) {
+        return a + b;
+    }
 
-        System.out.println("Addition: " + sum);
-        System.out.println("Subtraction: " + diff);
-        System.out.println("Multiplication: " + prod);
-        System.out.println("Division: " + div);
+    public static int sub(int a, int b) {
+        return a - b;
+    }
+
+    public static int mul(int a, int b) {
+        return a * b;
+    }
+
+    public static int div(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero not allowed");
+        }
+        return a / b;
     }
 }
-
